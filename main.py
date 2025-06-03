@@ -658,8 +658,8 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n"<blockquote>**Batch Name :** {b_name}<blockquote>"\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)`\n'
-                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n'<blockquote>**Batch Name :** {b_name}<blockquote>'\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)`\n'
+                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n<blockquote>**Batch Name :** {b_name}<blockquote>\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)`\n'
+                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n<blockquote>**Batch Name :** {b_name}<blockquote>\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)`\n'
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n' 
                 ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)`\n'
                 ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
