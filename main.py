@@ -487,7 +487,7 @@ async def txt_handler(bot: Client, m: Message):
                     other_count += 1
         os.remove(x)
     except:
-        await m.reply_text("<blockquote>🔹Invalid file input.<blockquote>")
+        await m.reply_text("```🔹Invalid file input.```")
         os.remove(x)
         return
     
