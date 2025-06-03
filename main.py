@@ -59,20 +59,26 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/saini_contact_bot")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/Strangerboy27_bot_strangerboy")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
-            InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/Strangerboy27_bot_strangerboy"),
+            "),
+            InlineKeyboardButton(text="🛠️ Repo", url="https://t.me/+aBB53vou0Z5hZWI1"),
         ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg",
+    "https://i.ibb.co/0p3pmkwn/Angel.jpg",
+    "https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg",
+    "https://i.ibb.co/wryWJwn5/STRANGER-BOY.jpg",
+    "https://i.ibb.co/pCtQngf/STRANGER-BOY.jpg",
+    "https://i.ibb.co/gMJHZgz4/STRANGER-BOY.jpg",
+    "https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg",
     # Add more image URLs as needed
 ]
 
@@ -331,7 +337,7 @@ async def start(bot, m: Message):
             f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
             f"Great! You are a premium member!\n"
             f"Use Command : /help to get started 🌟\n\n"
-            f"If you face any problem contact -  [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎](https://t.me/saini_contact_bot)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f"If you face any problem contact -  [STRANGER BOYS](https://t.me/Strangerboy27_bot_strangerboy)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
     else:
         await asyncio.sleep(2)
@@ -412,7 +418,7 @@ async def info(bot: Client, update: Message):
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
         f"╭━━━━━━━✦✧✦━━━━━━━╮\n"
-        f"💥 𝘽𝙊𝙏𝙎 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦\n"
+        f" [STRANGER BOTS](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n"
         f"╰━━━━━━━✦✧✦━━━━━━━╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
         f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
@@ -437,7 +443,7 @@ async def txt_handler(client: Client, m: Message):
         f"• Send any link for auto-extraction\n"  
         f"• Supports batch processing\n\n"  
         f"╭────────⊰◆⊱────────╮\n"   
-        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} 💻\n"
+        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : [STRANGER BOY](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg) 💻\n"
         f"╰────────⊰◆⊱────────╯\n"
         )
     )                    
@@ -482,7 +488,7 @@ async def txt_handler(bot: Client, m: Message):
                     other_count += 1
         os.remove(x)
     except:
-        await m.reply_text("<pre><code>🔹Invalid file input.</code></pre>")
+        await m.reply_text("<blockquote>🔹Invalid file input.<blockquote>")
         os.remove(x)
         return
     
@@ -566,11 +572,11 @@ async def txt_handler(bot: Client, m: Message):
     await editable.delete()
 
     if "/d" in raw_text7:
-        batch_message = await m.reply_text(f"<b>🎯Target Batch : {b_name}</b>")
+        batch_message = await m.reply_text(f"<blockquote>🎯Target Batch : {b_name}<blockquote>")
     else:
         try:
-            batch_message = await bot.send_message(chat_id=channel_id, text=f"<b>🎯Target Batch : {b_name}</b>")
-            await bot.send_message(chat_id=m.chat.id, text=f"<b><i>🎯Target Batch : {b_name}</i></b>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
+            batch_message = await bot.send_message(chat_id=channel_id, text=f"<blockquote>🎯Target Batch : {b_name}<blockquote>")
+            await bot.send_message(chat_id=m.chat.id, text=f"<blockquote>🎯Target Batch : {b_name}<blockquote>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
         except Exception as e:
             await m.reply_text(f"**Fail Reason »** {e}\n")
             return
@@ -653,10 +659,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
-                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
+                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n<blockquote>**Batch Name :** {b_name}<blockquote>\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)`\n'
+                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n<blockquote>**Batch Name :** {b_name}<blockquote>\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)`\n'
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n' 
-                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
+                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`[{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)`\n'
                 ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
                 cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n<pre><code>**Batch Name :** {b_name}</code></pre>\n\n**Extracted by➤**`{CR}`\n'
                   
