@@ -658,12 +658,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n```-┈━═.•°✅ STRANGER BOTS VIDEO ✅°•.═━┈-\n{b_name}\n```\nExtracted by ➤ [{CR}](https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg)\n'
-                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n```-┈━═.•°✅ STRANGER BOTS PDF ✅°•.═━┈-\n{b_name}\n```\nExtracted by ➤ [{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n'
-                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n```-┈━═.•°✅ STRANGER zip ✅°•.═━┈-\n{b_name}\n```\nExtracted by ➤ [{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)\n' 
-                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n```-┈━═.•°✅ STRANGER pic ✅°•.═━┈-\n{b_name}\n```\nExtracted by ➤ [{CR}](https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg)\n'
-                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n```-┈━═.•°✅ STRANGER mp3 ✅°•.═━┈-\n{b_name}\n```\nExtracted by ➤ [{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n'
-                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n```-┈━═.•°✅ STRANGER HTML ✅°•.═━┈-\n{b_name}\n```\nExtracted by ➤ [{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)\n'
+                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] .mkv`\n```-┈━═.•°✅ STRANGER BOTS VIDEO ✅°•.═━┈-\n{b_name}\n```\n```-┈━═.•°✅ ₹🌐STRANGER🙋‍♂️💠 ✅°•.═━┈-```\nExtracted by ➤ [{CR}](https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg)\n'
+                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} .pdf`\n```-┈━═.•°✅ STRANGER BOTS PDF ✅°•.═━┈-\n{b_name}\n```\n```-┈━═.•°✅ ₹🌐STRANGER🙋‍♂️💠 ✅°•.═━┈-```\nExtracted by ➤ [{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n'
+                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n```-┈━═.•°✅ STRANGER zip ✅°•.═━┈-\n{b_name}\n```\n```-┈━═.•°✅ ₹🌐STRANGER🙋‍♂️💠 ✅°•.═━┈-```\nExtracted by ➤ [{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)\n' 
+                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} .jpg`\n```-┈━═.•°✅ STRANGER pic ✅°•.═━┈-\n{b_name}\n```\n```-┈━═.•°✅ ₹🌐STRANGER🙋‍♂️💠 ✅°•.═━┈-```\nExtracted by ➤ [{CR}](https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg)\n'
+                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n```-┈━═.•°✅ STRANGER mp3 ✅°•.═━┈-\n{b_name}\n```\n```-┈━═.•°✅ ₹🌐STRANGER🙋‍♂️💠 ✅°•.═━┈-```\nExtracted by ➤ [{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n'
+                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n```-┈━═.•°✅ STRANGER HTML ✅°•.═━┈-\n{b_name}\n```\n```-┈━═.•°✅ ₹🌐STRANGER🙋‍♂️💠 ✅°•.═━┈-```\nExtracted by ➤ [{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)\n'
                   
                 if "drive" in url:
                     try:
