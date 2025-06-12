@@ -291,19 +291,38 @@ async def download_and_decrypt_video(url, cmd, name, key):
         else:  
             print(f"Failed to decrypt {video_path}.")  
             return None  
+async def create_text_thumbnail(text, filename="thumb.png"):
+    width, height = 1280, 720  # 16:9 aspect ratio
 
-async def send_vid(bot: Client, m: Message, cc, filename, thumb, name, prog, channel_id):
-    subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:10 -vframes 1 "{filename}.jpg"', shell=True)
-    await prog.delete (True)
-    reply = await bot.send_message(channel_id, f"**Generate Thumbnail:**\n{name}")
-    try:
-        if thumb == "/d":
-            thumbnail = f"{filename}.jpg"
-        else:
-            thumbnail = thumb
-            
-    except Exception as e:
-        await m.reply_text(str(e))
+    # 1. Create image with fully transparent background
+    img = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+
+    # 2. Random font color (RGB + full alpha)
+    font_color = (0, 0, 0, 255)
+
+    # 3. Use only TTF font to avoid default font issues
+    font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+    font_size = 120
+    font = ImageFont.truetype(font_path, font_size)
+
+    # 4. Measure text
+    bbox = draw.textbbox((0, 0), text, font=font)
+    text_width = bbox[2] - bbox[0]
+    text_height = bbox[3] - bbox[1]
+
+    # 4. Center the text
+    x = (width - text_width) / 2
+    y = (height - text_height) / 2
+
+    # 5. Draw text
+    draw.text((x, y), text, font=font, fill=font_color)
+
+    # 6. Save as PNG with alpha
+    img.save(filename, format="PNG")
+    return filename
+ 
       
     dur = int(duration(filename))
     start_time = time.time()
