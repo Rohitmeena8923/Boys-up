@@ -8,17 +8,17 @@ from os import environ
 
 
 
-API_ID = int(environ.get("API_ID", "26328207"))
+API_ID = int(environ.get("API_ID", "20928172"))
 
-API_HASH = environ.get("API_HASH", "d6dcc13df7527b36df3a28e04a72b35b")
+API_HASH = environ.get("API_HASH", "48ed56c8db54f85d232f576b150360ef")
 
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-OWNER = int(environ.get("OWNER", "6126688051"))
+OWNER = int(environ.get("OWNER", "6443740402"))
 
-CREDIT = "STRANGER BOY"
+CREDIT = "Shreya"
 
-LOG_CHANNEL = "-1002335220633" # log group me bot ko admin narur banaye full rights ke sath
+LOG_CHANNEL = "-1002556958706" # log group me bot ko admin narur banaye full rights ke sath
 
 #WEBHOOK = True  # Don't change this
 
